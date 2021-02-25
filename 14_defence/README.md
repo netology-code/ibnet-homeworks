@@ -77,7 +77,7 @@ ab -n 1000 -c 100 http://netology.local
 Меняем настройки nginx:
 
 ```shell script
-sudo mcedit /etc/nginx/sites-enabled/default.conf
+sudo mcedit /etc/nginx/sites-enabled/default
 ```
 
 Редактируем конфигурацию, чтобы она выглядела следующим образом:
