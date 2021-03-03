@@ -58,7 +58,7 @@ ab --help
 Если у вас выводится сообщение о том, что программа не найдена (`bash: ab command not found`), то установите её:
 ```shell script
 sudo apt update
-sudo apt install ab
+sudo apt install apache2-utils
 ```
 
 Далее сделаем 1000 запросов по 100 запросов одновременно:
