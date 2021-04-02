@@ -344,9 +344,9 @@ http://localhost:9999/step1-answer/step2-answer/step3-answer.zip
 И запускаете из командной строки в виде:
 * Windows (x86): `.\checker-x32.exe step1 FirstAnswer`
 * Windows (x64): `.\checker-x64.exe step1 FirstAnswer`
-* Linux (x86): `chmod +x ./server-x32.bin && ./server-x32.bin step1 FirstAnswer`
-* Linux (x64): `chmod +x ./server-x64.bin && ./server-x64.bin step1 FirstAnswer`
-* Mac OS (x64): `chmod +x ./iserver-x64.bin && ./iserver-x64.bin step1 FirstAnswer`
+* Linux (x86): `chmod +x ./checker-x32.bin && ./checker-x32.bin step1 FirstAnswer`
+* Linux (x64): `chmod +x ./checker-x64.bin && ./checker-x64.bin step1 FirstAnswer`
+* Mac OS (x64): `chmod +x ./ichecker-x64.bin && ./ichecker-x64.bin step1 FirstAnswer`
 
 Где:
 * `step1 answer` - ответ на первый вопрос
