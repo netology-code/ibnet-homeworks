@@ -156,7 +156,7 @@ ubuntu@ubuntu:~$ sudo ufw allow http
 Rule added
 Rule added (v6)
 
-# разрешение ssh (порт 21)
+# разрешение ssh (порт 22)
 ubuntu@ubuntu:~$ sudo ufw allow ssh
 Rule added
 Rule added (v6)
