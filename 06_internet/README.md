@@ -36,6 +36,12 @@
     
 Запустите ping между Host1 и Host2 (он должен быть успешен).
 
+
+### Инструменты/ дополнительные материалы, которые пригодятся для выполнения задания
+
+1. [Настройка BGP и практика](https://linkmeup.gitbook.io/sdsm/8.-bgp-i-ip-sla/2.-bgp/2.-nastroika-bgp-i-praktika/0.-nastroika-bgp)
+2. [bgp configuration lab](https://linuxtiwary.com/2018/02/19/bgp-routing-configuration-lab-using-packet-tracer/)
+
 В качестве результата пришлите сконфигурированную топологию в формате .pkt
 
 ## Internet*
