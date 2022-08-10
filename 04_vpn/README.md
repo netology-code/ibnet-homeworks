@@ -143,7 +143,7 @@ sudo openvpn --ifconfig 10.1.0.1 10.1.0.2 --dev tun --secret vpn.key
 
 Kali
 ```shell script
-sudo openvpn --ifconfig 10.1.0.2 10.1.0.1 --dev tun --remote 10.0.0.1 --secret vpn.key
+sudo openvpn --ifconfig 10.1.0.2 10.1.0.1 --dev tun --remote 10.0.0.1 --secret vpn.key --providers legacy default
 ```
 
 Ubuntu (прослушиваем порт 3000):
