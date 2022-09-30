@@ -116,7 +116,7 @@ sudo nginx -s reload
 
 Ещё раз делаем 1000 запросов по 100 запросов одновременно:
 ```shell script
-ab -n 1000 -c 100 https://netology.local/
+ab -n 1000 -c 100 http://netology.local/
 ``` 
 
 Удостоверяемся, что часть из них завершается с ошибкой:
