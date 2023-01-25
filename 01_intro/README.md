@@ -8,9 +8,9 @@
 1. Установить Cisco Packet Tracer. Коллеги из сетевой академии Cisco предоставили нам ссылки для скачивания программы. Вы можете выбрать тот файл, который подходит для вашей ОС. Работать в packet tracer можно при отключении интернета на вашем устройстве, иначе будет требоваться авторизация.
 Если вам будет удобнее авторизоваться для работы, то можно воспользоваться инструкцией по [ссылке](https://docs.google.com/document/d/1zZSrFXgMaSUWx5_I6xY8S1I8DGtCnEhkLbZPcxE68b8/edit)
 Ссылки для скачивания программы:
-+[PT для windows](https://disk.yandex.ru/d/SdBaqlDc012UYA)
-+[PT для macOS](https://disk.yandex.ru/d/jwvB6MfZyPZ5sw)
-+[PT для Linux](https://disk.yandex.ru/d/dU9AL1YstQzFGg)
+*[PT для windows](https://disk.yandex.ru/d/SdBaqlDc012UYA)
+*[PT для macOS](https://disk.yandex.ru/d/jwvB6MfZyPZ5sw)
+*[PT для Linux](https://disk.yandex.ru/d/dU9AL1YstQzFGg)
 1. Ознакомиться с руководством [по базовому использованию](basics.md)
 1. Создать схему из двух компьютеров, соединённых друг с другом (аналогично описанной в базовом руководстве)
 1. Выгрузить файл схемы в формате `pkt` и прислать в личном кабинете студента Нетологии
