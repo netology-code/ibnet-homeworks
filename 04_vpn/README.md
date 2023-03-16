@@ -145,6 +145,7 @@ Kali
 ```shell script
 sudo openvpn --ifconfig 10.1.0.2 10.1.0.1 --dev tun --remote 10.0.0.1 --secret vpn.key --providers legacy default
 ```
+Примечание: если соединение не создается для новых версий OpenVPN (старше 2.5), то вместо "--secret vpn.key" укажите "--genkey secret vpn.key" 
 
 Ubuntu (прослушиваем порт 3000):
 ```shell script
