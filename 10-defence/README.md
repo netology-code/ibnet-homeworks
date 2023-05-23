@@ -84,8 +84,6 @@ sudo mcedit /etc/nginx/sites-enabled/default.conf
 
 ![](pic/limit.png)
 
-Изменилась только 1-ая и 17-ая строки.
-
 <details>
 <summary>Описание значений</summary>
 
