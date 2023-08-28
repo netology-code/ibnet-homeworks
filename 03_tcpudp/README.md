@@ -13,7 +13,7 @@
 
 Firewall (межсетевой экран) - это устройство или программный продукт (есть разные исполнения), которое просматривает входящий и исходящий трафик и на основании определённых правил безопасности принимает решения о том, пропустить данный трафик (к сети, хосту или приложениям хоста) или нет.
 
-Рекомендуем вам ознакомиться с методическими документами ФСТЭК, посвящённым [межсетевым экранам](https://fstec.ru/tekhnicheskaya-zashchita-informatsii/dokumenty-po-sertifikatsii/120-normativnye-dokumenty/1185-metodicheskie-dokumenty-utverzhdeny-fstek-rossii-12-sentyabrya-2016-g).
+Рекомендуем вам ознакомиться с методическими документами ФСТЭК, посвящённым [межсетевым экранам](https://fstec.ru/dokumenty/vse-dokumenty/informatsionnye-i-analiticheskie-materialy/informatsionnoe-soobshchenie-fstek-rossii-ot-12-sentyabrya-2016-g-n-240-24-4278).
 
 В рамках данной лабораторной работы сделаем базовые настройки МЭ для Linux.
 
