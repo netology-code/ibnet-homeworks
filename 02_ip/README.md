@@ -15,6 +15,8 @@
 
 Пришлите pkt-файл и скриншот таблицы коммутации в качестве ответа к ДЗ в личном кабинете студента.
 
+**Установка Cisco Packet Tracer** объясняется по [ссылке](https://github.com/netology-code/ibnet-homeworks/tree/v2/01_intro)
+
 <details>
 <summary>Примеры с лекции</summary>
 
