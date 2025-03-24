@@ -18,7 +18,8 @@
 
 3\. Удостоверьтесь, что машины видят друг друга по адресам 10.0.0.1 и 10.0.0.2 соответственно (команда `ping`). Для этого после настройки в Network Manger, вам следуют перезагрузить интерфейс (выключить и включить) или презагрузить виртуальную машину, и на машине с Kali выполнить операцию ping 10.0.0.1 и получить результат. 
 
-!![]()
+![](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/04_vpn/pic/Picture%202.png)
+
 4\. Установите на обеих машинах OpenVPN:
 
 ```shell script
@@ -50,7 +51,10 @@ Ubuntu
 ```shell script
 sudo openvpn --ifconfig 10.1.0.1 10.1.0.2 --dev tun
 ```
-Где, 10.1.0.1 - это локальный VPN endpoint, 10.1.0.2 - удалённый VPN endpoint
+Где, 10.1.0.1 - это локальный VPN endpoint, 10.1.0.2 - удалённый VPN `endpoint`
+
+![](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/04_vpn/pic/Picture%203.png)
+![](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/04_vpn/pic/Picture%204.png)
 
 Kali
 ```shell script
@@ -59,7 +63,12 @@ sudo openvpn --ifconfig 10.1.0.2 10.1.0.1 --dev tun --remote 10.0.0.1
 В данном случае адреса меняются местами и мы указываем к какому адресу нужно подключиться (режим P2P).
 
 Откройте в Kali Wireshark и выберите интерфейс `eth1`. Для того чтобы посмотреть какой интерфейс выбрать, рекомендуем вызвать консоль и запустить `ip add` там вы сможете посмотреть какой интерфейс у вас настроен для локальной сети. 
+
+![](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/04_vpn/pic/Picture%205.png)
+
 Имейте в виду, если вы выбираете `lookback` интерфейс (петля) он будет показывать трафик без обработки `openvpn` в открытом виде. Выбирать надо порт номерной (enp,eth и другие) 
+
+![](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/04_vpn/pic/Picture%206.png)
 
 Для тестирования мы будем использовать утилиту netcat (она позволит прослушивать на сервере определённый порт, а с клиента подключаться к этому порту). 
 
@@ -78,6 +87,9 @@ nc 10.1.0.1 3000
 ```
 
 Удостоверьтесь в Wireshark, что данные передаются в открытом виде (`Follow UDP Stream`).
+
+![](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/04_vpn/pic/Picture%207.png)
+![](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/04_vpn/pic/Picture%208.png)
 
 Завершите работу `openvpn` на сервере и на клиенте (Ctrl + C).
 
@@ -113,6 +125,8 @@ scp [user_name@10.0.0.1:/home/user_name/vpn.key vpn.key](mailto:user_name@10.0.0
 /home/user_name – путь до объекта в системе Ubuntu/Debina, что или для кого закачать.
 
 После ввода команды надо внести пароль для подключения. Если вы всё указали правильно, файл скачается в текущую директорию, и вы сможете им воспользоваться.
+
+![](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/04_vpn/pic/Picture%209.png)
 
 Ubuntu
 ```shell script
