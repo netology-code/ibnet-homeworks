@@ -11,6 +11,7 @@
 Поднимите две виртуальные машины:
 
 _Рисунок 1_ – топология сети
+
 ![](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/04_vpn/pic/Picture%201.png) 
 
 
@@ -23,9 +24,8 @@ _Рисунок 1_ – топология сети
 _Рисунок 2_ – вид окна настройки сетевого интерфейса ubuntu
 ![рисунок 2](https://github.com/user-attachments/assets/d29448e5-84b4-4aaf-ace0-4fff14d0b552)
 
-
-![рисунок 3](https://github.com/user-attachments/assets/bffcea1f-adc8-4af3-842b-1f06177f60ac)
 _Рисунок 3_ – вид окна настройки сетевого интерфейса kali
+![рисунок 3](https://github.com/user-attachments/assets/bffcea1f-adc8-4af3-842b-1f06177f60ac)
 
 
 4\. Установите на обеих машинах OpenVPN:
@@ -45,8 +45,8 @@ sudo systemctl restart NetworkManager.service
 ```
 ([Дополнительная литература](https://wiki.debian.org/ru/OpenVPN), [Настройка VPN-подключения по протоколу OpenVPN в Network Manager](https://docs.altlinux.org/ru-RU/archive/9.0/html/alt-workstation/ch59s02s03.html))
 
-![рисунок 4](https://github.com/user-attachments/assets/a3b7eb7d-dd3d-4379-b5c4-6ead2671202a)
 _Рисунок 4_ – графическая настройка openvpn
+![рисунок 4](https://github.com/user-attachments/assets/a3b7eb7d-dd3d-4379-b5c4-6ead2671202a)
 
 
 5\. Дополнительно на Ubuntu установите сервер openssh:
