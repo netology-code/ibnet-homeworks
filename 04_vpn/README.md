@@ -46,6 +46,7 @@ sudo systemctl restart NetworkManager.service
 ([Дополнительная литература](https://wiki.debian.org/ru/OpenVPN), [Настройка VPN-подключения по протоколу OpenVPN в Network Manager](https://docs.altlinux.org/ru-RU/archive/9.0/html/alt-workstation/ch59s02s03.html))
 
 _Рисунок 4_ – графическая настройка openvpn
+
 ![рисунок 4](https://github.com/user-attachments/assets/a3b7eb7d-dd3d-4379-b5c4-6ead2671202a)
 
 
