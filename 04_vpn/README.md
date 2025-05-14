@@ -160,12 +160,13 @@ user_name – имя пользователя в Ubuntu (whoami в термин�
 
 Ubuntu
 ```shell script
-sudo openvpn --ifconfig 10.1.0.1 10.1.0.2 --dev tun --secret vpn.key
+sudo openvpn --ifconfig 10.1.0.1 10.1.0.2 --dev tun --secret vpn.key --chipher aes-256-cbc
+
 ```
 
 Kali
 ```shell script
-sudo openvpn --ifconfig 10.1.0.2 10.1.0.1 --dev tun --remote 10.0.0.1 --secret vpn.key --providers legacy default
+sudo openvpn --ifconfig 10.1.0.2 10.1.0.1 --dev tun --remote 10.0.0.1 --secret vpn.key --chipher aes-256-cbc
 ```
 Примечание: если соединение не создается для новых версий OpenVPN (старше 2.5),
 то вместо `--secret vpn.key` укажите `--genkey secret vpn.key`.
@@ -186,9 +187,9 @@ nc 10.1.0.1 3000
 
 ## Вопросы для отправки на проверку
 
-1\. Пришлите скриншот Wireshark, где видно, что данные передаются в открытом виде (для задания 2).
+1\. Пришлите скриншот Wireshark, где видно, что данные передаются в открытом виде (для раздела PlainText).
 
-2\. Пришлите скриншот Wireshark, где видно, что данные не передаются в открытом виде (для задания 3).
+2\. Пришлите скриншот Wireshark, где видно, что данные не передаются в открытом виде (для раздела Shared Key).
 
 На сервере или на клиенте запустите команду с флагом `--verb 3`, например, на Kali - `sudo openvpn --ifconfig 10.1.0.2 10.1.0.1 --dev tun --remote 10.0.0.1 --secret vpn.key --verb 3`
 
