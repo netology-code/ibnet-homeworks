@@ -11,7 +11,7 @@
 Поднимите две виртуальные машины:
 
 ![](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/04_vpn/pic/Picture%201.png) 
-Рисунок 1 – топология сети 
+_Рисунок 1_ – топология сети 
 
 1\. Ubuntu с Адаптер 1 - NAT и Адаптер 2 - Internal Network (10.0.0.1 - вручную, рисунок 2)
 
@@ -20,12 +20,10 @@
 3\. Удостоверьтесь, что машины видят друг друга по адресам 10.0.0.1 и 10.0.0.2 соответственно (команда `ping`). Для этого после настройки в Network Manger, вам следуют перезагрузить интерфейс (выключить и включить) или перезагрузить виртуальную машину, и на машине с Kali выполнить операцию `ping 10.0.0.1` и получить результат. 
 
 ![рисунок 2](https://github.com/user-attachments/assets/d29448e5-84b4-4aaf-ace0-4fff14d0b552)
-
-Рисунок 2 – вид окна настройки сетевого интерфейса ubuntu
+_Рисунок 2_ – вид окна настройки сетевого интерфейса ubuntu
 
 ![рисунок 3](https://github.com/user-attachments/assets/bffcea1f-adc8-4af3-842b-1f06177f60ac)
-
-Рисунок 3 – вид окна настройки сетевого интерфейса kali
+_Рисунок 3_ – вид окна настройки сетевого интерфейса kali
 
 
 4\. Установите на обеих машинах OpenVPN:
@@ -46,7 +44,7 @@ sudo systemctl restart NetworkManager.service
 ([Дополнительная литература](https://wiki.debian.org/ru/OpenVPN), [Настройка VPN-подключения по протоколу OpenVPN в Network Manager](https://docs.altlinux.org/ru-RU/archive/9.0/html/alt-workstation/ch59s02s03.html))
 
 ![рисунок 4](https://github.com/user-attachments/assets/a3b7eb7d-dd3d-4379-b5c4-6ead2671202a)
-Рисунок 4 – графическая настройка openvpn
+_Рисунок 4_ – графическая настройка openvpn
 
 
 5\. Дополнительно на Ubuntu установите сервер openssh:
