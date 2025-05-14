@@ -71,10 +71,10 @@ sudo openvpn --ifconfig 10.1.0.1 10.1.0.2 --dev tun
 
 Где, 10.1.0.1 - это локальный VPN `endpoint`, 10.1.0.2 - удалённый VPN `endpoint`
 
-Рисунок 5 – результат выполнения команды
+_Рисунок 5_ – результат выполнения команды
 ![](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/04_vpn/pic/Picture%203.png)
 
-Рисунок 6 – информация о интерфейсах
+_Рисунок 6_ – информация о интерфейсах
 ![](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/04_vpn/pic/Picture%204.png)
 
 Kali
@@ -85,12 +85,12 @@ sudo openvpn --ifconfig 10.1.0.2 10.1.0.1 --dev tun --remote 10.0.0.1
 
 Откройте в Kali Wireshark и выберите интерфейс `eth1`. Для того чтобы посмотреть какой интерфейс выбрать, рекомендуем вызвать консоль и запустить `ip add`, там вы сможете посмотреть какой интерфейс у вас настроен для локальной сети (рисунок 7). 
 
-Рисунок 7 – окно Wireshark перехватанные пакеты и выбранные интерфейсы
+_Рисунок 7_ – окно Wireshark перехватанные пакеты и выбранные интерфейсы
 ![](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/04_vpn/pic/Picture%205.png)
 
 Имейте в виду, если вы выбираете `lookback` интерфейс (петля), он будет показывать трафик без обработки `openvpn` в открытом виде. Выбирать надо порт номерной (`enp`,`eth` и другие) - (рисунок 8)
 
-Рисунок 8 – Результат перехваченных пакетов
+_Рисунок 8_ – Результат перехваченных пакетов
 ![](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/04_vpn/pic/Picture%206.png)
 
 Для тестирования мы будем использовать утилиту netcat (она позволит прослушивать на сервере определённый порт, а с клиента подключаться к этому порту). 
@@ -111,7 +111,7 @@ nc 10.1.0.1 3000
 
 Удостоверьтесь в Wireshark, что данные передаются в открытом виде (`Follow UDP Stream`) - (рисунок 9)
 
-Рисунок 9 – UDP Stream Wireshark
+_Рисунок 9_ – UDP Stream Wireshark
 ![](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/04_vpn/pic/Picture%207.png)
 ![](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/04_vpn/pic/Picture%208.png)
 
