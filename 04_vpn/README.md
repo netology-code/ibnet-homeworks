@@ -88,7 +88,7 @@ sudo openvpn --ifconfig 10.1.0.2 10.1.0.1 --dev tun --remote 10.0.0.1
 _Рисунок 7_ – окно Wireshark перехватанные пакеты и выбранные интерфейсы
 ![](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/04_vpn/pic/Picture%205.png)
 
-Имейте в виду, если вы выбираете `lookback` интерфейс (петля), он будет показывать трафик без обработки `openvpn` в открытом виде. Выбирать надо порт номерной (`enp`,`eth` и другие) - (рисунок 8)
+Имейте в виду, если вы выбираете `loopback` интерфейс (петля), он будет показывать трафик без обработки `openvpn` в открытом виде. Выбирать надо порт номерной (`enp`,`eth` и другие) - (рисунок 8)
 
 _Рисунок 8_ – Результат перехваченных пакетов
 ![](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/04_vpn/pic/Picture%206.png)
@@ -160,13 +160,13 @@ _Рисунок 10_ – результат передачи ключа и про
 
 Ubuntu
 ```shell script
-sudo openvpn --ifconfig 10.1.0.1 10.1.0.2 --dev tun --secret vpn.key --chipher aes-256-cbc
+sudo openvpn --ifconfig 10.1.0.1 10.1.0.2 --dev tun --secret vpn.key --cipher aes-256-cbc
 
 ```
 
 Kali
 ```shell script
-sudo openvpn --ifconfig 10.1.0.2 10.1.0.1 --dev tun --remote 10.0.0.1 --secret vpn.key --chipher aes-256-cbc
+sudo openvpn --ifconfig 10.1.0.2 10.1.0.1 --dev tun --remote 10.0.0.1 --secret vpn.key --cipher aes-256-cbc
 ```
 Примечание: если соединение не создается для новых версий OpenVPN (старше 2.5),
 то вместо `--secret vpn.key` укажите `--genkey secret vpn.key`.
@@ -191,7 +191,7 @@ nc 10.1.0.1 3000
 
 2\. Пришлите скриншот Wireshark, где видно, что данные не передаются в открытом виде (для раздела Shared Key).
 
-На сервере или на клиенте запустите команду с флагом `--verb 3`, например, на Kali - `sudo openvpn --ifconfig 10.1.0.2 10.1.0.1 --dev tun --remote 10.0.0.1 --secret vpn.key --verb 3`
+На сервере или на клиенте запустите команду с флагом `--verb 3`, например, на `Kali - sudo openvpn --ifconfig 10.1.0.2 10.1.0.1 --dev tun --remote 10.0.0.1 --secret vpn.key  --cipher aes-256-cbc --verb 3`
 
 Внимательно изучите вывод и пришлите ответы на следующие вопросы:
 
