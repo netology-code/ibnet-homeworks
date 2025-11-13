@@ -2,7 +2,7 @@
 
 В качестве результата пришлите ответы на вопросы в личном кабинете студента на сайте [netology.ru](https://netology.ru).
 
-**Установка Cisco Packet Tracer** объясняется по [ссылке](https://github.com/netology-code/ibnet-homeworks/tree/v2/01_intro)
+**Установка Cisco Packet Tracer** объясняется по [ссылке](https://github.com/netology-code/ibnet-homeworks/blob/ibnet-51/02_ip/cpt_inst.md)
 
 ## Задание 1. PC0
 
